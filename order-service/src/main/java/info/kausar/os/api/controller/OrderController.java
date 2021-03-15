@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/order")
-@CrossOrigin(origins = "*", maxAge = 3600)
 
 public class OrderController {
     @Autowired

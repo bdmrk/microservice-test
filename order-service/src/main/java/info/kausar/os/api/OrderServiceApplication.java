@@ -13,6 +13,7 @@ public class OrderServiceApplication {
 	}
 
 	@Bean
+
 	public RestTemplate restTemplate(){
 		return new RestTemplate();
 	}
