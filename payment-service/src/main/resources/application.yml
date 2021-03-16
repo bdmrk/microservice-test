@@ -6,7 +6,7 @@ spring:
     console:
       enabled: true
   application:
-    name: payment-service
+    name: PAYMENT-SERVICE
 eureka:
   client:
     service-url:
