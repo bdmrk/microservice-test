@@ -28,7 +28,7 @@ public class OrderService {
         //rest api call
 
         //for the time being hard code url
-        Payment paymentResponse = template.postForObject("http://192.168.1.118:9192/payment/doPayment", payment, Payment.class);
+        Payment paymentResponse = template.postForObject("http://PAYMENT-SERVICE/payment/doPayment", payment, Payment.class);
         response = paymentResponse.getPaymentStatus().equals("success") ? "Payment success and order placed" : "Payment Failed but order placed";
         oRepository.save(order);
         return new TransactionResponse(order, paymentResponse.getAmount(), paymentResponse.getTransactionId(), response);
