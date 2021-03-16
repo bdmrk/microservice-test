@@ -9,11 +9,14 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/order")
 
+
+
 public class OrderController {
     @Autowired
     private OrderService orderService;
 
     @PostMapping("/bookOrder")
+//    @RequestMapping(name = "/bookOrder", method = RequestMethod.POST, produces = "application/json; charset=utf-8")
     public TransactionResponse bookOrder(@RequestBody TransactionRequest request) {
         return  orderService.orderSave(request);
     }
