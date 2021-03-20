@@ -12,7 +12,7 @@
 	<artifactId>gateway2</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>gateway2</name>
-	<description>gateway2 project for Spring Boot</description>
+	<description>gateway project for Spring Boot</description>
 	<properties>
 		<java.version>1.8</java.version>
 		<spring-cloud.version>Hoxton.SR3</spring-cloud.version>

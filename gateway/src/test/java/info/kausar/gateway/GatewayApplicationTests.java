@@ -1,10 +1,10 @@
-package info.kausar.gateway2;
+package info.kausar.gateway;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class Gateway2ApplicationTests {
+class GatewayApplicationTests {
 
 	@Test
 	void contextLoads() {
