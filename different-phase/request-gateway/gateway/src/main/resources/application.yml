@@ -11,21 +11,11 @@ spring:
           uri: lb://ORDER-SERVICE
           predicates:
             - Path=/order/**
-          filters:
-            - name: CircuitBreaker
-              args:
-                name: order-service
-                fallbackUri: forward:/orderFallBack
 
         - id: PAYMENT-SERVICE
           uri: lb://PAYMENT-SERVICE
           predicates:
             - Path=/payment/**
-          filters:
-            - name: CircuitBreaker
-              args:
-                name: payment-service
-                fallbackUri: forward:/paymentFallBack
 
 server:
   port: 8080
@@ -38,26 +28,3 @@ eureka:
     fetch-registry: true
   instance:
     hostname: localhost
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: hystrix.stream
-
-hystrix:
-  command:
-    default:
-      execution:
-        isolation:
-          thread:
-            timeoutInMilliseconds: 5000
-
-
-
-
-
-
-
-
-

@@ -1,12 +1,12 @@
 server:
-  port: 8181
+  port: 9192
 
 spring:
   h2:
     console:
       enabled: true
   application:
-    name: PAYMENT-SERVICE
+    name: ORDER-SERVICE
 eureka:
   client:
     service-url:
