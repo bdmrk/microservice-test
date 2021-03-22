@@ -3,4 +3,4 @@
 3. Micro Service artitechture
 4. Service Registry (Eureka - Netflix)
 5. Gateway (spring cloud)
-6. Fault Tolerance(Histrix, Circuit breaker)
+6. Fault Tolerance(Histrix, Histrix dashboard, Circuit breaker)
