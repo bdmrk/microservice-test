@@ -4,3 +4,4 @@
 4. Service Registry (Eureka - Netflix)
 5. Gateway (spring cloud)
 6. Fault Tolerance(Histrix, Histrix dashboard, Circuit breaker)
+7. API Documentation (Swagger2)
